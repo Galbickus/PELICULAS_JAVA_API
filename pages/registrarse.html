@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registrarse</title>
         <!--se le cambia el nombre por convencion favicon.ico, pero es un JPG Y NORMALMENTE VA A LA altura del index-->
-        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../logo_azul.jpg" type="image/x-icon">
 
     </head>
     <body>
@@ -13,7 +13,7 @@
             <nav>
 
                 <!--etiqueta abierta multimedia, siempre arranco poniendo punto y barra para ver donde estoy-->
-                <a href="../logo_azul.jpg">
+                <a href="../assets/img/logo_azul.jpg">
                     <img src="../logo_azul.jpg" alt="logo de la pagina" width="50" loading="lazy">
                 </a>
                 <!--lista de items para los hipervinculos-->
@@ -30,9 +30,48 @@
                 </ul>
             </nav>
         </header>
+
         <main>
+            <section id="registro">
+                <h1>Registro</h1>
+                <form action="valida.php" method="post">
+                   <div>
+                       <!--Si uso label, en el label for, repito el id del input, esto los enlaza-->
+                       <input type="text" name="nombre" id="nombre" required> 
+                   </div>
+                   <div>
+                       <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                   </div>
+                   <div>
+                       <input type="email" name="email" id="email" placeholder="Email" required>
+                   </div>
+                   <div>
+                       <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                   </div>
+                   <div>
+                       <label for="nacimiento">Fecha de Nacimiento:</label>
+                       <input type="date" name="nacimiento" id="nacimiento" required>
+                   </div>
+                   <div>
+                       <select name="pais" id="pais" size="4">
+                           <option value="AR">Argentina</option>
+                           <option value="PE" selected>Peru</option>
+                           <option value="MX">Mexico</option>
+                           <option value="CL">Chile</option>
+                       </select>
+                   </div>
+                   <div>
+                       <label for="termino">Acepta terminos y condiciones</label>
+                       <input type="checkbox" name="termino" id="termino">
+                   </div>
+                   <div>
+                       <input type="reset" value="Limpiar Campos">
+                       <input type="submit" value="Registrarse">
+                   </div>
 
-
+                </form>
+   
+              </section>
 
         </main>
         <footer>
