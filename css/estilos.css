@@ -1,6 +1,16 @@
-h1{
-    color:blueviolet;
-    font-size: 30 px;
-    text-align: justify;
-    background-color: brown;
+*{
+
+}
+
+.colorFondos{
+    color: #181419;
+}
+.colorDeMarca{
+    color: #0045B5;
+}
+.colorDeRealce{
+    color: #00296a;
+}
+.colorFuente{
+    color: #f0f8ff;
 }
