@@ -1,0 +1,14 @@
+/*selectores
+selector de ETIQUETA ej
+h1{
+    color:rgb(5, 1, 134);
+    text-align: center;
+}
+
+Selector UNIVERSAL *
+*
+selector de CLASE
+(Se llama con el punto antes del nombre de la clase)
+selector de ID (se llama con una almohadilla)
+
+*/
