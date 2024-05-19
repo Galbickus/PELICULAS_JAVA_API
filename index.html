@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Peliculas</title>
+        <title>ArgenFilms</title>
                 <!--se le cambia el nombre por convencion favicon.ico, pero es un JPG Y NORMALMENTE VA A LA altura del index-->
         <link rel="shortcut icon" href="./logo_azul.jpg" type="image/x-icon">
     </head>
@@ -13,14 +13,15 @@
                 <!--etiqueta abierta multimedia, siempre arranco poniendo punto y barra para ver donde estoy-->
                 <a href="#">
                     <img src="./logo_azul.jpg" alt="logo de la pagina" width="50" loading="lazy">
+                    <span>ArgenFilms</span>
                 </a>
                 <!--lista de items para los hipervinculos-->
                 <ul>
                     <li>
-                        <a href="">Tendencias</a>
+                        <a href="">Los favoritos de la semana</a>
                     </li>
                     <li>
-                        <a href="./pages/registrarse.html">Registrarse</a>
+                        <a href="./pages/registrarse.html">Registrate</a>
                     </li>
                     <li>
                         <a href="./pages/iniciosesion.html">Iniciar Sesión</a>
@@ -28,12 +29,118 @@
                 </ul>
             </nav>
         </header>
+
         <main>
-            <!--imagen ruta absoluta (en este caso la pag devuelve una imagen random)-->
-            <img src="https://picsum.photos/200" alt="" loading="lazy">
-            <!--imagen relativa-->
-            <img src="./assets/img/foto_local_chico_y_perro.jpg" alt="ejemplo de ruta absoluta" loading="lazy">
+            <section class="seccion1">
+                    <h1>Películas y Series Argentinas<br> en un solo lugar</h1>
+                    <h2> lo mejor de nuestro cine <br> A un click.</h2>
+                    <a href="./pages/registrate.html">Registrate</a>
+            </section>
+
+            <section class="seccion2">
+                    <h2>Buscar por título</h2>
+                    <form>
+                        <input type="text" placeholder="Buscar..."/>
+                        <input type="submit" value="Buscar">
+                    </form>
+            </section>
+
+            <section class="seccion3">
+                <h2>Argenfilms</h2>
+
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/Argentina_1985.jpg" alt="Argentina 1985" loading="lazy">
+                </a>
+
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/ciudadano-ilsutre.jpg" alt="ciudadano ilsutre" loading="lazy">
+                </a>
+
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/Dos Hermanos.jpg" alt="Dos Hermanos" loading="lazy">
+                </a>
+
+                
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/El rapto.jpg" alt="El rapto" loading="lazy">
+                </a>
+
+                
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/el-angel.jpg" alt="El angel" loading="lazy">
+                </a>
+
+                                
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/El-Reino-Poster.jpg" alt="El reino" loading="lazy">
+                </a>
+
+                                
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/El_robo_del_siglo.jpg" alt="El robo del Siglo" loading="lazy">
+                </a>
+
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/El_secreto_de_sus_ojos.jpg" alt="El secreto de sus ojos" loading="lazy">
+                </a>
+
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/elijo-creer.jpg" alt="Elijo creer" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/Esperando_la_carroza.jpg" alt="Esperando la carroza" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/Futbolain_Metegol.jpg" alt="Metegol" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/la-extorsion.jpg" alt="La extorsión" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/Alen de la patagonia.png" alt="Alen de la Patagonia" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/pakapaka._los_motorjon.png" alt="Los Motorjon" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img src="./assets/img/films/robotia_2.png" alt="Robotia" loading="lazy">
+                </a>
+
+                <button class="boton anterior">Anterior</button>  
+                <button class="boton siguiente">Siguiente</button>
+
+            </section>
+
+            <section class="seccion4">
+                <h2>Clásicos que no fallan</h2>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/okupas.jpg" alt="Okupas" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/inseparables-334299703-large.jpg" alt="Inseparables" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/Relatos_Salvajes.jpg" alt="Relatos salvajes" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/voley-2.jpg" alt="voley" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/Un_Crimen_Argentino.jpg" alt="Un crimen Argentino" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/El_robo_del_siglo.jpg" alt="El robo del siglo" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/Los simuladores.jpg" alt="Los simuladores" loading="lazy">
+                </a>
+                <a href="./pages/detalle.html">
+                    <img class="imgAclamada" src="./assets/img/films/cien_anos_de_perdon-503722289-large.jpg" alt="Cien años de perdón" loading="lazy">
+                </a>
+            </section>
+
         </main>
+
         <footer>
 
         </footer>
