@@ -2,8 +2,8 @@
 
 *{
     font-family: "Roboto", sans-serif;
-    /*font-weight: 400;
-    font-size: 16px;*/
+    margin: 0;
+    padding: 0;
 }
 .colorLogo{
     color: #417A8E;
@@ -20,3 +20,20 @@
 .colorFuente{
     color: #f0f8ff;
 }
+
+header{
+    background-image: linear-gradient(to right top, #012155, #00317c, #0041a6, #0052d1, #0263fd);
+    color: #f0f8ff;
+}
+
+.seccion1{
+    background-image: url(../assets/img/bg-celeste.jpg);
+    background-size: cover; /*Le pido que la imagen se acomode para ocupar todo el contenedor*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*el bg queda fijo*/
+    color: #f0f8ff;
+    font-size: 1.2rem;
+    line-height: 1.5; 
+}
+
