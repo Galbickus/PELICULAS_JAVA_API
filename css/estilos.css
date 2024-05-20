@@ -24,6 +24,17 @@
 header{
     background-image: linear-gradient(to right top, #012155, #00317c, #0041a6, #0052d1, #0263fd);
     color: #f0f8ff;
+    padding: 20px;        /*para padding y margin no usar medidas relativas*/
+    /*height: 100px;*/      /*valor absoluto al alto del contenedor, para que no se ajuste al contenido*/
+    height: 15vh;       /*valor relativo*/
+}   
+
+ul{
+    list-style: none;  /*saco el circulito a las listas*/
+}
+a{
+    text-decoration: none; /*saco el subrayado a las anclas*/
+    color: #f0f8ff;
 }
 
 .seccion1{
@@ -35,5 +46,6 @@ header{
     color: #f0f8ff;
     font-size: 1.2rem;
     line-height: 1.5; 
+    text-align: center;
 }
 
