@@ -4,6 +4,11 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    /*box-sizing: content-box;*/  /*valor por defecto*/
+    box-sizing: border-box;
+
+
+
 }
 .colorLogo{
     color: #417A8E;
@@ -29,13 +34,27 @@ header{
     height: 15vh;       /*valor relativo*/
 }   
 
-ul{
-    list-style: none;  /*saco el circulito a las listas*/
+body{
+    a{  text-decoration: none; /*saco el subrayado a las anclas*/
+        color: #f0f8ff;
+        display: inline-block;
+    }
+
+    header{
+        nav{
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    margin: 1%;
+                    text-align: center;
+                }
+            }
+
+        }
+    }
 }
-a{
-    text-decoration: none; /*saco el subrayado a las anclas*/
-    color: #f0f8ff;
-}
+
 
 .seccion1{
     background-image: url(../assets/img/bg-celeste.jpg);
