@@ -6,7 +6,7 @@
     padding: 0;
     /*box-sizing: content-box;*/  /*valor por defecto*/
     box-sizing: border-box;
-
+}
 :root{
     --main-color: #417A8E;
     --secondary-color: #181419;
@@ -141,5 +141,4 @@ body{
             border-radius: 5px;
         }
     }
-}
 }
