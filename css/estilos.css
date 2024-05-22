@@ -7,32 +7,69 @@
     /*box-sizing: content-box;*/  /*valor por defecto*/
     box-sizing: border-box;
 
+:root{
+    --main-color: #417A8E;
+    --secondary-color: #181419;
+    --third-color: #0045B5;
+    --third-color-t: #f0f8ff;
+}
 
-
-}
-.colorLogo{
-    color: #417A8E;
-}
-.colorFondos{
-    color: #181419;
-}
-.colorDeMarca{
-    color: #0045B5;
-}
-.colorDeRealce{
-    color: #00296a;
-}
-.colorFuente{
+body{
+    background-color: #181419;
     color: #f0f8ff;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header,footer{
+    background-color: var(--third-color);
+    color: var(--main-color);
+    padding: 20px;
 }
 
 header{
     background-image: linear-gradient(to right top, #012155, #00317c, #0041a6, #0052d1, #0263fd);
     color: #f0f8ff;
-    padding: 20px;        /*para padding y margin no usar medidas relativas*/
+    padding: 0px;        /*para padding y margin no usar medidas relativas*/
     /*height: 100px;*/      /*valor absoluto al alto del contenedor, para que no se ajuste al contenido*/
     height: 15vh;       /*valor relativo*/
+    position: sticky;
+    top: 0;                 /* La posicion cero desde el top de su padre*/
+    z-index: 10;
+
+    nav{
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: var(--main-color);
+            font-size:1.6rem;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+            column-gap: 20px;
+            a{
+                font-size:1.4rem;
+            }
+           
+        }
+    }
+
 }   
+
 
 body{
     a{  text-decoration: none; /*saco el subrayado a las anclas*/
@@ -45,7 +82,7 @@ body{
         nav{
             ul{
                 list-style: none;
-                text-align: right;   
+                text-align: right;   /* ESTEEEEEE*/
                 li{
                 
                     display: inline-block;
@@ -72,3 +109,29 @@ body{
     text-align: center;
 }
 
+
+
+
+.seccion4{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    column-gap: 30px;
+    div{
+        width: 220px;
+        height: 350px;
+        flex-shrink: 0;
+        box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
+       
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}
+}
