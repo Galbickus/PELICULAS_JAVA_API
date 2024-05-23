@@ -21,4 +21,5 @@ body{
 }
 .bg-argenfilm{
     background-color: var(--third-color);
+    color: var(--third-color-t);
 }
